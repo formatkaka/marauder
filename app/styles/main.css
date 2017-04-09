@@ -18,11 +18,9 @@ h1 {
 .loginBox {
 	background-color: green;
 	position: absolute;
-	top: 40%;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .leftBox {
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
 }
