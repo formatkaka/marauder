@@ -1,0 +1,28 @@
+
+/*reset margin and padding*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	background-color: green;
+	text-align: center;
+}
+
+.container-fluid {
+	padding: 0px;
+}
+
+.loginBox {
+	background-color: green;
+	position: absolute;
+	top: 40%;
+}
+
+.leftBox {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
