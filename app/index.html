@@ -1,11 +1,23 @@
 <!doctype html>
-<html>
+
+<html ng-app="marauderApp">
     <head>  
-        <title>full doc</title>
+    <title>full doc</title>
+	    <link rel="stylesheet" href="styles/bootstrap.css">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="assets/icons/bootstrap-social-gh-pages/bootstrap-social.css">
+	    <link rel="stylesheet" href="styles/main.css">
     </head>
+
     <body>
-    	Siddhant
+
+		<div ui-view="" class="injecting"></div>
+
+	    <script src="scripts/jquery.min.js"></script>
+	    <script src="scripts/angular.min.js"></script>
+	    <script src="scripts/angular-ui-router.min.js"></script>
+	    <script src="scripts/bootstrap.min.js"></script>
+	    <script src="app.js"></script>
     </body>
 </html>
 
-<a href="views/homepage.html">Click me</a>

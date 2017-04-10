@@ -1,63 +1,45 @@
-
-<!doctype html>
-<html>
-    <head>  
-        <title>full doc</title>
-		<link rel="stylesheet" href="../styles/bootstrap.css">
-		<link rel="stylesheet" href="../styles/main.css">
-    </head>
-
-    <body>
-		<div class="container-fluid">
-
-			<div class="row">
-				<div class="col-sm-4 col-sm-offset-4 col-xs-12 loginBox">
-				
-					<div class="row">
-						<div class="col-xs-12">
-							Siddhant
-						</div>
-					</div>
-					
-					<div class="row">
-						<div class="leftBox col-sm-6 col-xs-12">
-							HelloHelloHelloHello
-							HelloHelloHelloHello
-							HelloHelloHelloHello
-						</div>
-						<div class="rightBox col-sm-6 col-xs-12">
-							Siddhant
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-			
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
-		<script src="../scripts/bootstrap.js"></script>
-		<script src="../scripts/main.js"></script>
-    </body>
-
-</html>
-
-
-
+<div class="container-fluid homePage">
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-4 col-xs-12 loginBox">
+            <div class="row loginHeader">
+                <div class="col-xs-12 loginHeaderText">
+                    <h4>LOGIN TO MARAUDER</h4>
+                </div>
+            </div>
+            <div class="row loginForm">
+                <div class="leftBox col-sm-6 col-xs-12">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password</label>
+                            <input type="password" class="form-control" id="pwd">
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit
+                        </button>
+                    </form>
+                </div>
+                <div class="rightBox col-sm-6 col-xs-12">
+                    <a class="btn btn-block btn-social btn-twitter">
+                        <span class="fa fa-twitter"></span> Sign in with Twitter
+                    </a>
+                    <a class="btn btn-block btn-social btn-google">
+                        <span class="fa fa-google"></span> Sign in with Google
+                    </a>
+                    <a class="btn btn-block btn-social btn-facebook">
+                        <span class="fa fa-facebook"></span> Sign in with Facebook
+                    </a>
+                    <ul>
+                        <li ng-repeat="l in list">{{ l }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
