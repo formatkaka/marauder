@@ -1,17 +1,16 @@
-var marauderApp = angular.module('marauderApp', ['ui.router']);
+var marauderApp = angular.module('marauderApp', ['ui.router', 'firebase']);
 
-marauderApp.config(function($stateProvider, $urlRouterProvider) {
-
-
+marauderApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
     $stateProvider
 
         .state('home', {
         url: '/',
-        templateUrl: 'views/homepage.html'
-        
+        templateUrl: 'views/homepage.html',
+        controller: 'LoginController'
+
     });
 
     $urlRouterProvider.otherwise('/');
 
-});
+}]);

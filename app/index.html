@@ -1,23 +1,35 @@
 <!doctype html>
-
 <html ng-app="marauderApp">
-    <head>  
+
+<head>
     <title>full doc</title>
-	    <link rel="stylesheet" href="styles/bootstrap.css">
-	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	    <link rel="stylesheet" href="assets/icons/bootstrap-social-gh-pages/bootstrap-social.css">
-	    <link rel="stylesheet" href="styles/main.css">
-    </head>
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/icons/bootstrap-social-gh-pages/bootstrap-social.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
 
-    <body>
+<body>
+    <div ui-view="" class="injecting"></div>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-ui-router.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.6/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+    
+    <script>
+    var config = {
+        apiKey: "AIzaSyCU3yrdPpEfFEJCgmN5GDQ7goGnp3Cn2Jg",
+        authDomain: "oauth-39e10.firebaseapp.com",
+        databaseURL: "https://oauth-39e10.firebaseio.com",
+        projectId: "oauth-39e10",
+        storageBucket: "oauth-39e10.appspot.com",
+        messagingSenderId: "166344455094"
+    };
+    firebase.initializeApp(config);
+    </script>
+	<script src="scripts.min.js"></script>
+</body>
 
-		<div ui-view="" class="injecting"></div>
-
-	    <script src="scripts/jquery.min.js"></script>
-	    <script src="scripts/angular.min.js"></script>
-	    <script src="scripts/angular-ui-router.min.js"></script>
-	    <script src="scripts/bootstrap.min.js"></script>
-	    <script src="app.js"></script>
-    </body>
 </html>
-

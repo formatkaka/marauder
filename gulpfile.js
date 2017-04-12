@@ -4,15 +4,17 @@ var gulp = require('gulp')
 	plumber = require('gulp-plumber'),
 	browserSync = require('browser-sync'),
 	reload = browserSync.reload,
+	concat = require('gulp-concat'),
 	del = require('del');
 //// JS
 
 gulp.task('scripts', function() {
-    gulp.src('app/scripts/*.js')
+    gulp.src(['app/app.js', 'app/scripts/main.js','app/controllers/*.js'])
+    	.pipe(concat('scripts.js'))
     	.pipe(plumber())
     	.pipe(rename({suffix: '.min'}))
         .pipe(uglify({ mangle: { toplevel: true } }))
-        .pipe(gulp.dest('build'))
+        .pipe(gulp.dest('app'))
 		.pipe(reload({stream: true}));
 });
 
@@ -44,7 +46,8 @@ gulp.task('browser-sync', function () {
 
 
 gulp.task('watch', function () {
-	gulp.watch('app/scripts/*.js', ['scripts']);
+	gulp.watch('app/**/*.js', ['scripts']);
+	gulp.watch('app/controllers/*.js', ['scripts']);
 	gulp.watch('app/styles/*.css',['styles']);
 	gulp.watch('app/**/*.html',['views']);
 });
