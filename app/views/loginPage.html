@@ -1,13 +1,13 @@
-<div class="container-fluid homePage">
+<div class="container-fluid loginPage">
     <div class="row">
-        <div class="col-sm-4 col-sm-offset-4 col-xs-12 loginBox">
+        <div class="col-md-4 col-md-offset-4 col-sm-12  loginBox">
             <div class="row loginHeader">
                 <div class="col-xs-12 loginHeaderText">
-                    <h4>{{title}}</h4>
+                    <h4>LOGIN TO MARAUDER</h4>
                 </div>
             </div>
             <div class="row loginForm">
-                <div class="leftBox col-sm-6 col-xs-12">
+                <div class="leftBox col-md-6 col-sm-12">
                     <form>
                         <div class="form-group">
                             <label for="email">Email</label>
@@ -25,19 +25,16 @@
                         </button>
                     </form>
                 </div>
-                <div class="rightBox col-sm-6 col-xs-12">
-                    <a class="btn btn-block btn-social btn-twitter">
+                <div class="rightBox col-md-6 col-sm-12">
+                    <a class="btn btn-block btn-social btn-twitter" ng-click="Login('t')">
                         <span class="fa fa-twitter"></span> Sign in with Twitter
                     </a>
-                    <a class="btn btn-block btn-social btn-google">
+                    <a class="btn btn-block btn-social btn-google" ng-click="Login('g')">
                         <span class="fa fa-google"></span> Sign in with Google
                     </a>
-                    <a class="btn btn-block btn-social btn-facebook">
+                    <a class="btn btn-block btn-social btn-facebook" ng-click="Login('f')">
                         <span class="fa fa-facebook"></span> Sign in with Facebook
                     </a>
-                    <ul>
-                        <li ng-repeat="l in list">{{ l }}</li>
-                    </ul>
                 </div>
             </div>
         </div>

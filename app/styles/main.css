@@ -1,67 +1,78 @@
-
 /*reset margin and padding*/
+
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
-	background-color: green;
-	text-align: center;
+    background-color: green;
+    text-align: center;
 }
 
-html, body, .injecting {
-	height: 100%;
+html,
+body,
+.injecting {
+    height: 100%;
 }
 
-.container-fluid {
-	padding: 0px;
-	background-color: #2A2637;
-	height: 100%;
+.loginPage {
+    padding: 0px;
+    background-color: #2A2637;
+    height: 100%;
 }
 
-.loginBox {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+@media screen and (min-width: 1000px) {
+    .loginBox {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .loginBox {
+        height: 100%;
+    }
 }
 
 .loginHeader {
-	background-color: #F94F64;
-	height: auto;
-	text-align: center;
-	border-radius: 5px 5px 0px 0px;
+    background-color: #F94F64;
+    height: auto;
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .loginHeaderText h4 {
-	color: white;
-	font: 1.5em "Open Sans", sans-serif;
+    color: white;
+    font: 1.5em "Open Sans", sans-serif;
 }
+
+
 /*948BA5*/
+
 .loginForm {
-	background-color: white;
-	border-radius: 0px 0px 5px 5px ;
-	padding: 2%;
+    background-color: white;
+    border-radius: 0px 0px 5px 5px;
+    padding: 2%;
 }
-
-
 
 form div label {
-	color: #948BA5;
+    color: #948BA5;
 }
 
 .loginForm form button {
-	background-color: #F94F64;
-	color: white;
-	font: 1.1em "Open Sans", sans-serif;
+    background-color: #F94F64;
+    color: white;
+    font: 1.1em "Open Sans", sans-serif;
 }
 
 .rightBox {
-	padding: 1%;
-	height: auto;
+    padding: 1%;
+    height: auto;
 }
 
 .rightBox a {
-	height: auto;
-	margin-top: 5%;
+    height: auto;
+    margin-top: 5%;
 }

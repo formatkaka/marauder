@@ -9,7 +9,7 @@ var gulp = require('gulp')
 //// JS
 
 gulp.task('scripts', function() {
-    gulp.src(['app/app.js', 'app/scripts/main.js','app/controllers/*.js'])
+    gulp.src(['app/app.js', 'app/scripts/main.js','app/controllers/*.js','app/services/*.js'])
     	.pipe(concat('scripts.js'))
     	.pipe(plumber())
     	.pipe(rename({suffix: '.min'}))

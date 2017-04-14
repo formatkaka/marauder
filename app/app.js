@@ -4,10 +4,16 @@ marauderApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
 
     $stateProvider
 
-        .state('home', {
+        .state('login', {
         url: '/',
-        templateUrl: 'views/homepage.html',
+        templateUrl: 'views/loginPage.html',
         controller: 'LoginController'
+
+    })
+        .state('home', {
+        url: '/feed',
+        templateUrl: 'views/homePage.html',
+        controller: 'homePageController'
 
     });
 
