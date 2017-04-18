@@ -1,16 +1,12 @@
 <div class="container-fluid homePage">
-
-    <div ng-include="'../views/navbar.html'" class="col-xs-12">
+    <div ng-include="'../views/navbar.html'">
         NAVBAR
     </div>
-    
-
-    <div class="row">
-        <div ng-include src="'../views/leftPane.html'" class="col-xs-3">
-        </div>
-        <div class="col-xs-5 col-xs-offset-1" style="background-color: yellow; top: 50px">
+    <div class="row " style="margin-top: 50px;">
+        <div ng-include="'../views/leftPane.html'"></div>
+        <div class="mainFeed" >
             <div class="row" ng-repeat="feed in feeds">
-                <div class="FeedBox" style="padding: 3%; border: solid;">
+                <div class="FeedBox" style="border: solid; padding: 3%;background-color: yellow; ">
                     <div class="row">
                         <div class="ImageThumbnail col-xs-3">
                             Image
@@ -25,25 +21,32 @@
                         </div>
                     </div>
                     <div class="row">
-                    	My post here
+                        My post here
                     </div>
                     <div class="row Buttons-LCS">
-                    	<div class="col-xs-6">
-                    		<div class="col-xs-4">
-                    			<a>like</a>
-                    		</div>
-                    		<div class="col-xs-4">
-                    			<a>comment</a>
-                    		</div>
-                    		<div class="col-xs-4">
-                    			<a>share</a>
-                    		</div>
-                    	</div>
+                        <div class="col-xs-6">
+                            <div class="col-xs-4">
+                                <a>like</a>
+                            </div>
+                            <div class="col-xs-4">
+                                <a>comment</a>
+                            </div>
+                            <div class="col-xs-4">
+                                <a>share</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div ng-include src="'../views/chatPane.html'" class="col-xs-3"></div>
+        <div class="chatPane" style="background-color: orange;">
+            chatPane
+        </div>
+        <!-- <div ng-include="'../views/chatPane.html'"></div> -->
+        <!-- <div class="row col-xs-12"> -->
     </div>
+
+    <div class="row">
+    </div>
+
 </div>
